@@ -1,3 +1,9 @@
+**模型训练**
+
+- python train.py --img 640 --batch 16 --epochs 20 --data ./data/foot_detect.yaml --cfg ./models/yolov5s.yaml --weights weights/yolov5s.pt
+- python test.py --data ./data/foot_detect.yaml --weights runs/train/exp5/weights/best.pt --augment
+- python detect.py --weights runs/train/exp5/weights/best.pt --source ./data/Dataset/images/test/ --save-txt
+
 <div align="center">
 <p>
 <a align="left" href="https://ultralytics.com/yolov5" target="_blank">
